@@ -1,0 +1,11 @@
+public static String dosmth(String s) throws IOException {
+        BufferedReader in1 = new BufferedReader(new InputStreamReader(System.in, "Cp1251"));
+        StringTokenizer st=new StringTokenizer(s);
+        StringBuffer sb= new StringBuffer();
+        while(st.hasMoreTokens()){
+            String str=st.nextToken();
+            if(str.length()>2){sb.append(str.toLowerCase()+" ");
+            } else{sb.append(str+" ");}
+        }
+        return sb.toString();
+    }
